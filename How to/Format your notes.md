@@ -1,5 +1,4 @@
-
-Obsidian is a Markdown-based note-taking and knowledge base app. 
+Obsidian is a Markdown-based note-taking and knowledge base app.
 
 We currently support the formats below:
 
@@ -31,18 +30,28 @@ Embed another file (read more about [[Embed files]]). Here's an embedded section
 
 ```md
 # This is a heading 1
+
 ## This is a heading 2
-### This is a heading 3 
+
+### This is a heading 3
+
 #### This is a heading 4
+
 ##### This is a heading 5
+
 ###### This is a heading 6
 ```
 
 # This is a heading 1
+
 ## This is a heading 2
-### This is a heading 3 
+
+### This is a heading 3
+
 #### This is a heading 4
+
 ##### This is a heading 5
+
 ###### This is a heading 6
 
 ---
@@ -50,20 +59,20 @@ Embed another file (read more about [[Embed files]]). Here's an embedded section
 ### Emphasis
 
 ```md
-*This text will be italic*
+_This text will be italic_
 _This will also be italic_
 ```
 
-*This text will be italic*
+_This text will be italic_
 _This will also be italic_
 
 ```md
 **This text will be bold**
-__This will also be bold__
+**This will also be bold**
 ```
 
 **This text will be bold**
-__This will also be bold__
+**This will also be bold**
 
 ```md
 _You **can** combine them_
@@ -99,7 +108,7 @@ _You **can** combine them_
    1. Item 3a
    1. Item 3b
 
---- 
+---
 
 ### Images
 
@@ -195,8 +204,7 @@ Or you can enclose the target in `<>`, such as:
 Text inside `backticks` on a line will be formatted like code.
 ```
 
-Text inside `backticks` on a line will be formatted like code. 
-
+Text inside `backticks` on a line will be formatted like code.
 
 ---
 
@@ -204,29 +212,28 @@ Text inside `backticks` on a line will be formatted like code.
 
 Syntax highlight is supported with the language specified after the first set of backticks. We use prismjs for syntax highlighting, a list of supported languages can be found [at their site](https://prismjs.com/#supported-languages)
 
-<pre><code>```js
+```js
 function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
+  if (arg) {
+    $.facebox({ div: "#foo" });
   }
 }
-```</code></pre>
+```
 
 ```js
 function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
+  if (arg) {
+    $.facebox({ div: "#foo" });
   }
 }
 ```
-    
-	
+
 ```md
-    Text indented with a tab is formatted like this, and will also look like a code block in preview. 
+    Text indented with a tab is formatted like this, and will also look like a code block in preview.
 ```
 
-    Text indented with a tab is formatted like this, and will also look like a code block in preview. 
-    
+    Text indented with a tab is formatted like this, and will also look like a code block in preview.
+
 ---
 
 ### Task list
@@ -254,42 +261,42 @@ function fancyAlert(arg) {
 You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
 
 ```md
-First Header | Second Header
------------- | ------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 ```
 
-First Header | Second Header
------------- | ------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
 ---
 
 ```md
-Tables can be justified with a colon | Another example with a long title
-:----------------|-------------:
-because of the `:` | these will be justified
+| Tables can be justified with a colon | Another example with a long title |
+| :----------------------------------- | --------------------------------: |
+| because of the `:`                   |           these will be justified |
 
 If you put links in tables, they will work, but if you use Piped Links, the pipe must be escaped with a `\` to prevent it being read as a table element.
 ```
 
-Tables can be justified with a colon | Another example with a long title
-:----------------|-------------:
-because of the `:` | these will be justified
+| Tables can be justified with a colon | Another example with a long title |
+| :----------------------------------- | --------------------------------: |
+| because of the `:`                   |           these will be justified |
 
 If you put links in tables, they will work, but if you use Piped Links, the pipe must be escaped with a `\` to prevent it being read as a table element.
 
 ```md
-First Header | Second Header
------------- | ------------
-[[Format your notes\|Formatting]]	|  [[Keyboard shortcuts\|hotkeys]]
+| First Header                      | Second Header                   |
+| --------------------------------- | ------------------------------- |
+| [[Format your notes\|Formatting]] | [[Keyboard shortcuts\|hotkeys]] |
 ```
 
-First Header | Second Header
------------- | ------------
-[[Format your notes\|Formatting]]	|  [[Keyboard shortcuts\|hotkeys]]	
+| First Header                      | Second Header                   |
+| --------------------------------- | ------------------------------- |
+| [[Format your notes\|Formatting]] | [[Keyboard shortcuts\|hotkeys]] |
 
 ---
 
@@ -319,7 +326,6 @@ Use two equal signs to ==highlight text==.
 Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 [^1]: meaningful!
-
 [^bignote]: Here's one with multiple paragraphs and code.
 
     Indent paragraphs to include them in the footnote.
@@ -332,7 +338,6 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 [^1]: meaningful!
-
 [^bignote]: Here's one with multiple paragraphs and code.
 
     Indent paragraphs to include them in the footnote.
@@ -340,7 +345,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
     `{ my code }`
 
     Add as many paragraphs as you like.
-	
+
 ```md
 You can also use inline footnotes. ^[notice that the carat goes outside of the brackets on this one.]
 ```
@@ -350,14 +355,18 @@ You can also use inline footnotes. ^[notice that the carat goes outside of the b
 ### Math
 
 ```md
-$$\begin{vmatrix}a & b\\
+$$
+\begin{vmatrix}a & b\\
 c & d
-\end{vmatrix}=ad-bc$$
+\end{vmatrix}=ad-bc
+$$
 ```
 
-$$\begin{vmatrix}a & b\\
+$$
+\begin{vmatrix}a & b\\
 c & d
-\end{vmatrix}=ad-bc$$
+\end{vmatrix}=ad-bc
+$$
 
 You can also do inline math like $e^{2i\pi} = 1$ .
 
@@ -389,7 +398,7 @@ multiple lines
 
 Obsidian uses [Mermaid](https://mermaid-js.github.io/) to render diagrams and charts. Mermaid also provides [a helpful live editor](https://mermaid-js.github.io/mermaid-live-editor).
 
-<pre><code>```mermaid
+````mermaid
 sequenceDiagram
     Alice->>+John: Hello John, how are you?
     Alice->>+John: John, can you hear me?
@@ -403,10 +412,11 @@ sequenceDiagram
     Alice->>+John: John, can you hear me?
     John-->>-Alice: Hi Alice, I can hear you!
     John-->>-Alice: I feel great!
-```
+````
 
 Obsidian supports linking to notes in Mermaid:
-<pre><code>```mermaid
+
+````mermaid
 graph TD
 
 Biology --> Chemistry
@@ -415,7 +425,8 @@ class Biology,Chemistry internal-link;
 ```</code></pre>
 
 An easier way to do it is the following: ^376b9d
-<pre><code>```mermaid
+
+```mermaid
 graph TD
 
 A[Biology]
@@ -436,3 +447,12 @@ It looks like this if you follow the [[Format your notes#^376b9d|second option]]
 ## Developer notes
 
 We strive for maximum capability without breaking any existing formats, therefore we use a slightly unorthodox combination of flavors of markdown. It is broadly CommonMark, with the addition of some functionality from GitHub Flavored Markdown (GFM), some latex support, and our chosen embed syntax, which you can read more about at [[Accepted file formats]].
+
+[//begin]: # "Autogenerated link references for markdown compatibility"
+[Internal link]: Internal link "Internal link"
+[Embed files]: Embed files "Embed files"
+[Using obsidian URI|Obsidian URI]: ../Advanced topics/Using obsidian URI "Using obsidian URI"
+[Format your notes\|Formatting]: Format your notes "This is a heading 1"
+[Keyboard shortcuts\|hotkeys]: Keyboard shortcuts "Keyboard shortcuts"
+[//end]: # "Autogenerated link references"
+````

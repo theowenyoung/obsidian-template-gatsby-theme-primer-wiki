@@ -42,9 +42,9 @@ You can embed search results in a note.
 
 For example, if you write:
 
-<pre><code>```query
+```query
 embed OR search
-```</code></pre>
+```
 
 You should see this embedded search view (note: it doesn't work on [[Obsidian Publish]] as of 2020/01/18):
 
@@ -61,7 +61,7 @@ When crafting a search query, remember that clicking "Explain Search Term" will 
 - Words in the search query separated by space will be searched independently in each note. For example `foo bar` will find a note that includes both `foo` and `bar` anywhere in it.
 - `"Quoted strings"` can be used to search multiple consecutive words separated by space, or in other words, a phrase. So, searching for `"foo bar"` with quotes will only find notes that include those words next to each other. You can use backslash `\"` to escape double quotes if you actually want to search for a string that includes quotes. And `\\` will do the same for backslash.
 - Boolean operations can be used. Use `OR` to match one or another. Use `-` to negate a query. The space character is used for boolean "and".
-	- For example: `foo OR bar` will find all notes that contain either of those words, they don't have to be in the same note. `foo -bar` will find all notes that contain `foo`, but not if they also contain `bar`.
+  - For example: `foo OR bar` will find all notes that contain either of those words, they don't have to be in the same note. `foo -bar` will find all notes that contain `foo`, but not if they also contain `bar`.
 - Parenthesis can be used to group boolean operations. For example `((a OR b) (c OR d))`. This can be useful when crafting complex searches to make sure things happen in the order you want.
 - Regular expressions (regex) can now be used in search. Use forward slash to denote a regular expression. For example: `/[a-z]{3}/`. Obsidian accepts the JavaScript flavor regular expressions. You can learn more about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
@@ -78,5 +78,5 @@ Several special operators are available. Some operators allow nesting queries us
 - `block:(...)` will perform the subquery on a block-by-block basis, where each block defined as a markdown block, typically separated by empty lines or list items. This is expensive computationally as it requires parsing each file, which means this is likely slower than other modes.
 - `section:(...)` will perform the subquery on a section-by-section basis, where each section is the text between two headings, including the first heading.
 - `task:(...)` will perform the subquery only on each [[Format your notes#Task list|task]] and on a block-by-block basis. Use `task:""` to match all tasks.
-- `task-todo:(...)` will perform the subquery only on each *uncompleted* [[Format your notes#Task list|task]] and on a block-by-block basis. Use `task-todo:""` to match all uncompleted tasks.
-- `task-done:(...)` will perform the subquery only on each *completed* [[Format your notes#Task list|task]] and on a block-by-block basis. Use `task-done:""` to match all completed tasks.
+- `task-todo:(...)` will perform the subquery only on each _uncompleted_ [[Format your notes#Task list|task]] and on a block-by-block basis. Use `task-todo:""` to match all uncompleted tasks.
+- `task-done:(...)` will perform the subquery only on each _completed_ [[Format your notes#Task list|task]] and on a block-by-block basis. Use `task-done:""` to match all completed tasks.
