@@ -1,8 +1,90 @@
-Hi there! I'm a note in your vault.
+# Obsibian Template for Gatsby Theme Primer Wiki  
 
-At the same time, I'm also just a Markdown file sitting on your hard disk. It's all in plain text, so you don't need to worry about losing me in case [[Obsidian]] disappears one day.
+**👋Another Obsibian template that use [gatsby-theme-primer-wiki](https://github.com/theowenyoung/gatsby-theme-primer-wiki), Welcome to your new Foam Knowledge Base!**
+
+  
+
+## Examples
+
+  
+
+- [Demo](https://demo-wiki.owenyoung.com) - ([Source](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example))
+
+- [Everything I Know by Owen](https://wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/wiki))
+
+- [Foam Demo](https://demo-foam.owenyoung.com/) - ([Source](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki))
+
+- [Obsidian Demo](https://demo-obsidian.owenyoung.com/) - ([Source](https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki))
+
+- [Gatsby Starter Demo](https://demo-gatsby-starter-primer-wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/gatsby-starter-primer-wiki))
+
+  
+
+## Features
+
+  
+
+- Support Local search, full-text search.
+
+- Support Graph Visualisation with canvas.
+
+- Support Tags, Tags First, Generating tag pages, also connecting with graph visualisation.
+
+- Support [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) styled `SUMMARY.md` for custom sidebar.
+
+- Support `[[WikiLink]]`, But you'd better use [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions) with extensions, `"foam.edit.linkReferenceDefinitions": "withExtensions"`
+
+- Support Light/Dark Theme
+
+- Custom Header Nav Items
+
+- Nested sidebar
+
+- Support Google Analytics
+
+- Support Sitemap/Robot
+
+- SEO optimization
+
+  
+
+## Principles
+
+  
+
+Here are my main ideas/principles in designing this theme.
+
+  
+
+1. No vendor lock-in. The less vendor features you use, the better you'll be able to migrate, including this theme. So we should only write standard markdown. I like `[[WikiLink]]`, but I love standard markdown more. So we should always use standard markdown link `[text](https://example.com)`, or use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions), and don't use any vendor locked-in feature. That give us the capability change our theme, or hosted place.
+
+2. Use meta data instead of special characters. We should use `tags` as the document's metadata, not `#tag` in the plain text.
+
+3. Use tags instead of categories. Minimal subfolders.
 
 ## Quick Start
+
+1. Press "Use this template" button at [obsidian-template-gatsby-theme-primer-wiki](https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/generate) (that's this repository!) to fork it to your own GitHub account. If you want to keep your thoughts to yourself, remember to set the repository private.
+
+2. [Clone the repository to your local machine](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and open it in Obsidian
+
+### Local Preview
+
+```bash
+
+cd .layouts
+
+npm i
+
+npm start
+
+```
+
+### Deploy
+
+Deploy to Github Pages, see `.github/workflows/deploy.yml`
+
+## Obsidian Quick Start
 
 If you're in a hurry, here's some quick places to dive in:
 
