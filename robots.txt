@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://demo-obsidian.owenyoung.com/sitemap/sitemap-index.xml
+Host: https://demo-obsidian.owenyoung.com
