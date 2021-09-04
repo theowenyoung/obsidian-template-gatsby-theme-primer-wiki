@@ -1,12 +1,8 @@
-# Obsibian Template for Gatsby Theme Primer Wiki  
+# Obsibian Template for Gatsby Theme Primer Wiki
 
 **👋Another Obsibian template that use [gatsby-theme-primer-wiki](https://github.com/theowenyoung/gatsby-theme-primer-wiki), Welcome to your new Foam Knowledge Base!**
 
-  
-
 ## Examples
-
-  
 
 - [Demo](https://demo-wiki.owenyoung.com) - ([Source](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example))
 
@@ -18,11 +14,7 @@
 
 - [Gatsby Starter Demo](https://demo-gatsby-starter-primer-wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/gatsby-starter-primer-wiki))
 
-  
-
 ## Features
-
-  
 
 - Support Local search, full-text search.
 
@@ -46,15 +38,9 @@
 
 - SEO optimization
 
-  
-
 ## Principles
 
-  
-
 Here are my main ideas/principles in designing this theme.
-
-  
 
 1. No vendor lock-in. The less vendor features you use, the better you'll be able to migrate, including this theme. So we should only write standard markdown. I like `[[WikiLink]]`, but I love standard markdown more. So we should always use standard markdown link `[text](https://example.com)`, or use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions), and don't use any vendor locked-in feature. That give us the capability change our theme, or hosted place.
 
@@ -64,9 +50,21 @@ Here are my main ideas/principles in designing this theme.
 
 ## Quick Start
 
+### New Wiki
+
 1. Press "Use this template" button at [obsidian-template-gatsby-theme-primer-wiki](https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/generate) (that's this repository!) to fork it to your own GitHub account. If you want to keep your thoughts to yourself, remember to set the repository private.
 
 2. [Clone the repository to your local machine](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and open it in Obsidian
+
+### Exist Wiki
+
+1. Clone this repo to your local machine
+
+```bash
+git clone https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki.git
+```
+
+2. Copy `.layouts`, `.github` `.gitignore` to your wiki folder.
 
 ### Local Preview
 
@@ -122,5 +120,3 @@ By the way, you can feel free to edit these help docs, but when you open it agai
 ## I have questions.
 
 Then you should join our [community!](https://obsidian.md/community). We have active Discord and Forums, and the community is generally quite helpful.
-
-
