@@ -56,6 +56,8 @@ Here are my main ideas/principles in designing this theme.
 
 2. [Clone the repository to your local machine](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and open it in Obsidian
 
+3. Delete all `.md` files you don't need, Change Site settings at `.layouts/gatsby-config.js`, change your CNAME at `.layouts/static/CNAME`, change your icon at `.layouts/static/logo.png`, commit your changes, and push to github, change your page settings at Github, make sure you set the page branch to `gh-pages`, then when github actions runed, you can visit your site.
+
 ### Exist Wiki
 
 1. Clone this repo to your local machine
